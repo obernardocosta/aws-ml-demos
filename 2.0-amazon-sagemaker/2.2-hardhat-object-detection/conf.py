@@ -8,10 +8,10 @@ test_image_base_path = 'img/raw'
 detection_image_base_path = 'img/detection'
 
 # Replace before CreateEndpoint
-training_job_name = 'object-detection-2020-08-11-21-55-56-208'  
+training_job_name = '<YOUR_TRAINNING_JOB_NAME>'  
 
 # Replace before CreateEndpoint
-model_data = 's3://{}/output/object-detection-2020-08-11-21-55-56-208/output/model.tar.gz'.format(SESSION_BUCKET)
+model_data = 's3://{}/output/{}/output/model.tar.gz'.format(SESSION_BUCKET, training_job_name)
 
 endpoint_name = training_job_name
 model_name = 'object-detector-hardhat-200ep'
